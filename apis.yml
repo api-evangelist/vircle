@@ -1,7 +1,25 @@
 aid: vircle
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vircle.png
 name: Vircle
-description: Vircle is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Vircle is a Malaysian family fintech platform, operated by Debit Circles
+  Sdn Bhd, offering a parent app paired with a prepaid card for children so families
+  can give pocket money, assign chores, and teach kids to earn, save, and spend responsibly.
+  It issues a Visa Prepaid Card (Vircle Club) usable at Visa merchants worldwide and
+  a School Card for cafeteria and campus e-store purchases, with real-time spend alerts
+  and parental controls. Card issuance is provided in partnership with Fass Payment
+  Solutions (Fasspay). Vircle is a portfolio company of 500 Global. As a consumer
+  mobile app it publishes no public developer portal, API, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/vircle/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Payments
+- Prepaid Cards
+- Financial Literacy
+- Family
+- Kids
+- Malaysia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/vircle-domain-security.yml
 - type: Website
   url: https://vircle.com
+- type: Blog
+  url: https://www.vircle.com/blog
+- type: Support
+  url: https://www.vircle.com/help
+- type: TermsOfService
+  url: https://www.vircle.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.vircle.com/privacy-policy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
